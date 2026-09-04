@@ -1,0 +1,20 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "rewrites": [
+    {
+      "source": "/thetanuts-api/:path*",
+      "destination": "https://round-snowflake-9c31.devops-118.workers.dev/:path*"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/thetanuts-api/:path*",
+      "headers": [
+        {
+          "key": "x-vercel-enable-rewrite-caching",
+          "value": "0"
+        }
+      ]
+    }
+  ]
+}
