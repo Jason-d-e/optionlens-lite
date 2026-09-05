@@ -22,3 +22,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Vercel CLI deployment metadata and local credentials
+.vercel/
+
+.vercel
